@@ -1,0 +1,320 @@
+/* General Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f8f9fa;
+    margin: 0;
+    padding: 0;
+}
+
+h2.text {
+    text-align: center;
+    color: #4CAF50;
+    font-size: 28px;
+    margin-top: 20px;
+}
+
+/* Category Filter */
+#ddlCategories {
+    padding: 8px;
+    font-size: 16px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+/* Product Grid */
+.product-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+/* Product Card */
+.product-card {
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    margin: 15px;
+    padding: 15px;
+    width: 250px;
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+}
+
+    .product-card:hover {
+        transform: translateY(-5px);
+    }
+
+    /* Image Styling */
+    .product-card img {
+        width: 100%;
+        max-height: 150px;
+        object-fit: contain;
+        border-bottom: 1px solid #ddd;
+        margin-bottom: 10px;
+    }
+
+/* Product Info */
+.product-info h4 {
+    font-size: 18px;
+    margin: 5px 0;
+    color: #333;
+}
+
+.product-info p {
+    font-size: 14px;
+    color: #777;
+}
+
+/* Price */
+.product-info span {
+    font-weight: bold;
+    font-size: 16px;
+    color: #4CAF50;
+}
+
+/* Buttons */
+.product-buttons {
+    margin-top: 10px;
+}
+
+.buy-btn,
+.cart-btn {
+    display: inline-block;
+    padding: 8px 15px;
+    font-size: 14px;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 5px;
+    transition: background 0.3s;
+}
+
+.buy-btn {
+    background: #4CAF50;
+}
+
+    .buy-btn:hover {
+        background: #388E3C;
+    }
+
+.cart-btn {
+    background: #ff9800;
+}
+
+    .cart-btn:hover {
+        background: #e68900;
+    }
+
+/* Pagination */
+.pagination-controls {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+    .pagination-controls button {
+        background: #4CAF50;
+        color: white;
+        border: none;
+        padding: 8px 15px;
+        margin: 5px;
+        cursor: pointer;
+        border-radius: 5px;
+        transition: background 0.3s;
+    }
+
+        .pagination-controls button:hover {
+            background: #388E3C;
+        }
+
+
+/* gridview */
+
+.text {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.cart-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+    .cart-table th, .cart-table td {
+        padding: 10px;
+        text-align: center;
+        border-bottom: 1px solid #ddd;
+    }
+
+    .cart-table th {
+        background-color: #007bff;
+        color: white;
+    }
+
+.quantity-box {
+    width: 40px;
+    text-align: center;
+}
+
+.update-btn {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+    .update-btn:hover {
+        background-color: #218838;
+    }
+
+.remove-btn {
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+    .remove-btn:hover {
+        background-color: darkred;
+    }
+
+.checkout-btn {
+    border-style: none;
+    border-color: inherit;
+    border-width: medium;
+    display: block;
+    margin: 20px auto;
+    padding: 10px;
+    background-color: #ffc107;
+    color: black;
+    text-align: center;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+    .checkout-btn:hover {
+        background-color: #e0a800;
+    }
+
+
+/*checkout*/
+
+.checkout-form {
+    width: 60%;
+    margin: 20px auto;
+    padding: 20px;
+    background: #fff;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+h2.text {
+    text-align: center;
+    font-size: 28px;
+    color: #28a745;
+    margin-bottom: 20px;
+}
+
+.checkout-form label {
+    display: block;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.checkout-form .input-box {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-top: 5px;
+}
+
+.checkout-form .payment-options {
+    display: flex;
+    gap: 15px;
+    margin-top: 10px;
+}
+
+.payment-options label {
+    font-weight: normal;
+}
+
+.checkout-form .checkout-btn {
+    width: 100%;
+    background: #28a745;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 15px;
+    font-size: 16px;
+}
+
+    .checkout-form .checkout-btn:hover {
+        background: #218838;
+    }
+
+    /*cart1*/
+
+/* GridView Table Styling */
+.custom-gridview {
+    border-collapse: collapse;
+    background-color: #fff;
+    font-family: Arial, sans-serif;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+    /* Header Styling */
+    .custom-gridview th {
+        background-color: #2c3e50; /* Dark header */
+        color: white;
+        padding: 12px;
+        text-align: left;
+        border-bottom: 2px solid #34495e;
+    }
+
+    /* Row Styling */
+    .custom-gridview td {
+        padding: 10px;
+        border-bottom: 1px solid #ddd;
+    }
+
+    /* Alternating Row Colors */
+    .custom-gridview tr:nth-child(even) {
+        background-color: #f7f7f7;
+    }
+
+    /* Hover Effect */
+    .custom-gridview tr:hover {
+        background-color: #dcdde1;
+        transition: 0.3s ease-in-out;
+    }
+
+    /* Image Styling */
+    .custom-gridview img {
+        width: 50px;
+        height: 50px;
+        border-radius: 5px;
+    }
+
+    /* Remove Link Styling */
+    .custom-gridview a {
+        color: #3498db;
+        text-decoration: none;
+        font-weight: bold;
+    }
+
+        .custom-gridview a:hover {
+            color: #e74c3c;
+            text-decoration: underline;
+        }
+
